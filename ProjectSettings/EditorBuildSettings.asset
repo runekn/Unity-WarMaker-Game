@@ -4,4 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+  - enabled: 1
+    path: Assets/Scenes/MapEditor.unity
+  - enabled: 1
+    path: Assets/Scenes/MapPlayer.unity
+  - enabled: 1
+    path: Assets/Scenes/TileEditor.unity

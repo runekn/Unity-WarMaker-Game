@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Toggle))]
 public class TileButtonController : MonoBehaviour {
 
     public TileEditorController EditorController;
+    public ToggleGroup Togglegroup;
     public TileType Type
     {
         get { return _type; }
@@ -15,10 +17,11 @@ public class TileButtonController : MonoBehaviour {
 
     private TileType _type;
 
-    private void Awake()
+    private void Start()
     {
-        var button = GetComponent<Button>();
-        button.onClick.AddListener(() => EditorController.ChangeTile(Type, this));
+        var toggle = GetComponent<Toggle>();
+        toggle.group = Togglegroup;
+        toggle.onValueChanged.AddListener((selected) => { if (selected) EditorController.ChangeTile(Type, this); });
     }
 
     public void Draw()

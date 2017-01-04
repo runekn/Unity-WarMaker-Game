@@ -10,11 +10,17 @@ public class TileSetPanelController : MonoBehaviour {
     public GameObject TilePanel;
     public GameObject CategoryPanel;
 
+    private ToggleGroup _toggleGroup;
     private List<GameObject> _panels;
 
     void Awake()
     {
         _panels = new List<GameObject>();
+    }
+
+    private void Start()
+    {
+        _toggleGroup = DisplayPanel.GetComponent<ToggleGroup>();
     }
 
     public void Draw(TileSet Set)
@@ -48,6 +54,7 @@ public class TileSetPanelController : MonoBehaviour {
                     var controller = tilePanel.GetComponent<TileButtonController>();
                     controller.Type = type;
                     controller.EditorController = EditorController;
+                    controller.Togglegroup = _toggleGroup;
                 }
             }
         }
