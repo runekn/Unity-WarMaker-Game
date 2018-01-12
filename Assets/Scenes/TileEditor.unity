@@ -402,28 +402,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &179039141 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1164936926794434, guid: 6d19ba303d789084f943e6fdbd239df2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1800349204}
 --- !u!224 &179039142 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224999097025927474, guid: 6d19ba303d789084f943e6fdbd239df2,
     type: 2}
   m_PrefabInternal: {fileID: 1800349204}
---- !u!114 &179039143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 179039141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
 --- !u!1 &186854171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,11 +3750,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224999097025927474, guid: 6d19ba303d789084f943e6fdbd239df2,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d19ba303d789084f943e6fdbd239df2, type: 2}
